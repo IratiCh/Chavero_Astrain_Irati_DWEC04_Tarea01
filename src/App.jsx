@@ -10,9 +10,9 @@ function Titulo({ totalPersonas }) {
 // Segundo componente para mostrar todas las personas que cumplen años
 function Cumpleaños({ personas }) {
   //console.log(personas);
+  // Recorremos array y añadimos el código html con los datos sacados de data.js
   return (
     <>
-      // Recorremos array y añadimos el código html con los datos sacados de data.js
       {personas.map((persona) => (
         <article key={persona.id} className="person">
           <img src={persona.image} alt={persona.name} />
